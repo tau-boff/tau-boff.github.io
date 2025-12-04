@@ -1027,10 +1027,6 @@ button {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .footer {
-    border-radius: 20px 20px 0 0;
-  }
-
   .booking-modal__content {
     padding: 2rem 1.5rem;
     max-width: 100%;
