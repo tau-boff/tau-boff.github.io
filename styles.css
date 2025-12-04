@@ -1019,15 +1019,115 @@ button {
 
 @media (max-width: 720px) {
   .hero__content {
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero__logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__logo-image {
+    width: 4.5rem;
+  }
+
+  .hero__logo-text {
+    font-size: 0.75rem;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.65rem;
+    margin-bottom: 1rem;
   }
 
   .hero__title {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .hero__actions {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__note {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .section__title {
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .section__title--compact {
+    font-size: clamp(1.15rem, 3vw, 1.4rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .section__text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .ritual__icon--chinese {
+    font-size: 1.6rem;
+  }
+
+  .ritual__title {
+    font-size: 1.05rem;
+  }
+
+  .ritual__text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .ritual__services {
+    font-size: 0.75rem;
+  }
+
+  .ritual__link {
+    font-size: 0.8rem;
   }
 
   .section--rituals {
+    padding: 2.5rem 0;
     padding-bottom: 8rem;
+  }
+
+  .ritual {
+    margin-bottom: 1rem;
+  }
+
+  .footer__phrase {
+    font-size: 1.5rem;
+  }
+
+  .footer__copy {
+    font-size: 0.75rem;
+  }
+
+  .footer__location {
+    font-size: 0.7rem;
+  }
+
+  .footer__credit {
+    font-size: 0.6rem;
   }
 
   .footer {
@@ -1046,6 +1146,26 @@ button {
   .booking-modal__title {
     font-size: 1.5rem;
     padding-right: 2rem;
+  }
+
+  .booking-modal__subtitle {
+    font-size: 0.85rem;
+  }
+
+  .booking-form__label {
+    font-size: 0.8rem;
+  }
+
+  .booking-form__input {
+    font-size: 0.9rem;
+  }
+
+  .booking-form__radio span {
+    font-size: 0.85rem;
+  }
+
+  .booking-form__submit {
+    font-size: 0.85rem;
   }
 
   .booking-form__radio-group {
