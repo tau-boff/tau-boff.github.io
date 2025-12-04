@@ -51,6 +51,7 @@ bookingButtons.forEach((button) => {
   });
 });
 
+
 // Fechar modal
 closeButtons.forEach((button) => {
   button.addEventListener("click", closeModal);
@@ -131,19 +132,35 @@ if (customSelect && selectTrigger && selectDropdown) {
 
 // Abrir modal
 function openModal(serviceName = null) {
-  if (serviceName && serviceSelect && selectValue && selectOptions) {
+  if (!modal) return;
+  
+  if (serviceName && serviceSelect && selectValue && selectOptions && selectOptions.length > 0) {
     // Find and select the option
+    let found = false;
     selectOptions.forEach((option) => {
-      if (option.getAttribute("data-value") === serviceName) {
-        const text = option.textContent;
+      const optionValue = option.getAttribute("data-value");
+      if (optionValue === serviceName) {
+        const text = option.textContent.trim();
         serviceSelect.value = serviceName;
         selectValue.textContent = text;
         selectValue.classList.add("has-value");
         selectOptions.forEach((opt) => opt.classList.remove("is-selected"));
         option.classList.add("is-selected");
+        found = true;
       }
     });
-  } else if (serviceSelect && selectValue && selectOptions) {
+    
+    // Se não encontrou, resetar
+    if (!found && serviceSelect && selectValue) {
+      serviceSelect.value = "";
+      selectValue.textContent = "Selecione o serviço";
+      selectValue.classList.remove("has-value");
+      if (selectOptions.length > 0) {
+        selectOptions.forEach((opt) => opt.classList.remove("is-selected"));
+        selectOptions[0].classList.add("is-selected");
+      }
+    }
+  } else if (serviceSelect && selectValue && selectOptions && selectOptions.length > 0) {
     // Reset to placeholder
     serviceSelect.value = "";
     selectValue.textContent = "Selecione o serviço";
@@ -151,6 +168,7 @@ function openModal(serviceName = null) {
     selectOptions.forEach((opt) => opt.classList.remove("is-selected"));
     selectOptions[0].classList.add("is-selected");
   }
+  
   modal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
   
@@ -163,9 +181,11 @@ function openModal(serviceName = null) {
   }
   
   // Focar no primeiro input
-  const firstInput = bookingForm.querySelector("input[type='text']");
-  if (firstInput) {
-    setTimeout(() => firstInput.focus(), 100);
+  if (bookingForm) {
+    const firstInput = bookingForm.querySelector("input[type='text']");
+    if (firstInput) {
+      setTimeout(() => firstInput.focus(), 100);
+    }
   }
 }
 

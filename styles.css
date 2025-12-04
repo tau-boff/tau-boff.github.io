@@ -94,7 +94,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 0.9rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero__logo-image {
@@ -106,30 +106,33 @@ button {
 
 .hero__logo-text {
   font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.22em;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  opacity: 0.85;
 }
 
 .hero__eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
 }
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: clamp(2.6rem, 3.6vw + 1.4rem, 3.8rem);
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
   line-height: 1.1;
-  margin: 0 0 1.5rem;
+  margin: 0 0 25px;
 }
 
 .hero__subtitle {
-  max-width: 34rem;
+  max-width: 650px;
   margin: 0 auto 2.5rem;
-  font-size: 0.98rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.95;
 }
 
 .hero__actions {
@@ -141,10 +144,11 @@ button {
 }
 
 .hero__note {
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 0.7;
+  margin-top: 3rem;
 }
 
 /* BOTÕES */
@@ -208,7 +212,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
   align-items: center;
-  gap: 3.5rem;
+  gap: 2.5rem;
 }
 
 .section__eyebrow {
@@ -228,6 +232,13 @@ button {
 .section__title--compact {
   font-size: clamp(1.4rem, 1.4vw + 1rem, 1.9rem);
   margin-bottom: 0.7rem;
+}
+
+.section__title--rituals {
+  font-size: clamp(1.6rem, 2.5vw + 1rem, 2rem);
+  font-family: var(--font-heading);
+  color: #4A3F41;
+  margin-bottom: 1.5rem;
 }
 
 .section__text {
@@ -252,11 +263,11 @@ button {
   background-color: var(--color-background);
   border-radius: 0;
   margin: 0;
-  padding: 3.5rem 0;
-  padding-bottom: 6rem;
-  min-height: 100vh;
+  padding: 0;
+  height: 100vh;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .section__media {
@@ -274,11 +285,22 @@ button {
 
 .section__content {
   padding-right: 1rem;
-  padding-bottom: 1rem;
 }
 
 .ritual {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+}
+
+.ritual:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(140, 156, 143, 0.2);
 }
 
 .ritual__icon {
@@ -290,7 +312,7 @@ button {
 }
 
 .ritual__icon--chinese {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", serif;
   font-weight: 500;
@@ -298,18 +320,23 @@ button {
   display: inline-block;
   text-shadow: 0 1px 2px rgba(196, 135, 147, 0.15);
   padding: 0.2rem 0;
+  margin-bottom: 0.3rem;
 }
 
 .ritual__title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #4A3F41;
+  margin: 0 0 0.8rem;
 }
 
 .ritual__text {
-  font-size: 0.86rem;
-  line-height: 1.55;
-  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem;
 }
 
 .ritual__services {
@@ -371,9 +398,7 @@ button {
 
 
 .ritual__divider {
-  border: none;
-  border-top: 1px solid rgba(140, 156, 143, 0.45);
-  margin: 0.9rem 0 0.9rem;
+  display: none;
 }
 
 .services-grid {
@@ -401,8 +426,7 @@ button {
 .footer {
   background-color: var(--color-secondary);
   color: var(--color-background);
-  padding: 3.5rem 0 3rem;
-  padding-bottom: 6rem;
+  padding: 80px 0 60px;
   border-radius: 0;
   margin-top: 0;
   min-height: 100vh;
@@ -427,14 +451,16 @@ button {
 
 .footer__phrase {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
-  margin: 0 0 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #FAF7F5;
+  margin: 0 0 30px;
 }
 
 .footer__social {
   display: flex;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 25px;
   margin-bottom: 2rem;
 }
 
@@ -442,15 +468,14 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: inherit;
+  color: #FAF7F5;
   text-decoration: none;
-  opacity: 0.9;
-  transition: transform 150ms ease-out, opacity 150ms ease-out;
+  transition: transform 200ms ease-out, filter 200ms ease-out;
 }
 
 .footer__social-link:hover {
-  transform: translateY(-1px);
-  opacity: 1;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(250, 247, 245, 0.6));
 }
 
 .footer__icon {
@@ -460,26 +485,33 @@ button {
 }
 
 .footer__copy {
-  font-size: 0.82rem;
-  letter-spacing: 0.16em;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 0.8;
+  margin: 0;
 }
 
 .footer__location {
+  font-family: var(--font-body);
   font-size: 0.75rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   opacity: 0.8;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0;
 }
 
 .footer__credit {
-  font-size: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
   letter-spacing: 0.05em;
-  opacity: 0.6;
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(250, 247, 245, 0.15);
+  opacity: 0.7;
+  margin: 40px auto 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 300px;
 }
 
 .footer__heart {
@@ -500,13 +532,12 @@ button {
 .footer__credit-link {
   color: inherit;
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 150ms ease-out;
+  transition: color 200ms ease-out;
 }
 
 .footer__credit-link:hover {
-  opacity: 1;
-  text-decoration: underline;
+  color: #C48793;
+  text-decoration: none;
 }
 
 /* PLAYER DE ÁUDIO RELAXANTE */
@@ -1033,23 +1064,29 @@ button {
 
   .hero__logo-text {
     font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    opacity: 0.85;
   }
 
   .hero__eyebrow {
-    font-size: 0.65rem;
-    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.5rem;
+    opacity: 0.85;
   }
 
   .hero__title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
   }
 
   .hero__subtitle {
-    font-size: 0.85rem;
-    margin-bottom: 1.8rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    max-width: 100%;
   }
 
   .hero__actions {
@@ -1057,7 +1094,10 @@ button {
   }
 
   .hero__note {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+    opacity: 0.7;
+    margin-top: 2.5rem;
   }
 
   .btn {
@@ -1077,6 +1117,17 @@ button {
   .section__title--compact {
     font-size: clamp(1.15rem, 3vw, 1.4rem);
     margin-bottom: 0.5rem;
+  }
+
+  .section__title--rituals {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .ritual__title {
+    font-size: 0.8rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .section__text {
@@ -1106,20 +1157,57 @@ button {
   }
 
   .section--rituals {
-    padding: 2.5rem 0;
-    padding-bottom: 8rem;
+    height: 100vh;
+    padding: 0;
   }
 
   .ritual {
     margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .section__title--rituals {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .ritual__icon--chinese {
+    font-size: 1.3rem;
+  }
+
+  .ritual__title {
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .ritual__text {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .ritual__services {
+    font-size: 0.7rem;
   }
 
   .footer__phrase {
     font-size: 1.5rem;
   }
 
+  .footer {
+    padding: 60px 0 80px;
+  }
+
+  .footer__phrase {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  .footer__social {
+    gap: 20px;
+  }
+
   .footer__copy {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .footer__location {
@@ -1127,11 +1215,9 @@ button {
   }
 
   .footer__credit {
-    font-size: 0.6rem;
-  }
-
-  .footer {
-    padding-bottom: 8rem;
+    font-size: 0.65rem;
+    max-width: 100%;
+    margin: 30px auto 15px;
   }
 
   .placeholder-cards {
