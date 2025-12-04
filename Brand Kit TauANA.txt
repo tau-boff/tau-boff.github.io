@@ -1,0 +1,87 @@
+================================================================
+BRAND KIT: TAUANA BOFF
+Identidade Visual - Versão Premium / Relaxamento
+Data: 04/12/2025
+================================================================
+
+1. CONCEITO E ATMOSFERA
+----------------------------------------------------------------
+Estilo: Minimalismo Natural, Luxo Acessível, Zen, Elegância.
+Palavras-chave: Cura, Equilíbrio, Sofisticação, Calma, Exclusividade.
+Atmosfera Visual: Muito espaço em branco ("respiro"), tipografia editorial,
+imagens atmosféricas e cores dessaturadas (queimadas) para não cansar a vista.
+
+2. PALETA DE CORES (HEX & USO)
+----------------------------------------------------------------
+
+A. COR PRIMÁRIA (DESTAQUE)
+   Nome: Old Rose (Rosa Antigo)
+   HEX:  #C48793
+   USO:  Botões de ação (CTA), pétalas da flor de lótus, ícones principais,
+         destaques em palavras-chave.
+   SENSAÇÃO: Acolhimento, elegância feminina, maturidade.
+
+B. COR SECUNDÁRIA (NATUREZA/BASE)
+   Nome: Sage Green (Verde Sálvia)
+   HEX:  #8C9C8F
+   USO:  Fundo do rodapé (Footer), folhas da flor de lótus, linhas divisórias finas,
+         elementos secundários.
+   SENSAÇÃO: Cura, natureza, frescor, estabilidade.
+
+C. COR DE FUNDO (CANVAS)
+   Nome: Warm Linen (Linho Quente / Off-White)
+   HEX:  #FAF7F5
+   USO:  Fundo geral do site (background-color).
+   NOTA: Evitar branco puro (#FFFFFF) para manter o conforto visual.
+
+D. COR DE TEXTO (TIPOGRAFIA)
+   Nome: Dark Truffle (Cinza Quente Escuro)
+   HEX:  #4A3F41
+   USO:  Títulos (H1, H2, H3), parágrafos e menus.
+   NOTA: Substitui o preto puro (#000000) para suavizar a leitura.
+
+3. TIPOGRAFIA (FONTES SUGERIDAS)
+----------------------------------------------------------------
+
+A. TÍTULOS (Headings)
+   Estilo: Serifada Elegante (Editorial)
+   Sugestões Google Fonts:
+   - "Cormorant Garamond" (Pesos: 600, 700)
+   - "Playfair Display" (Pesos: 500, 600)
+   - "Cinzel Decorative" (Apenas para detalhes muito curtos)
+
+B. CORPO DE TEXTO (Body)
+   Estilo: Sans-serif Limpa e Geométrica
+   Sugestões Google Fonts:
+   - "Montserrat" (Pesos: 300 Light, 400 Regular)
+   - "Lato" (Pesos: 300, 400)
+   - "Raleway" (Ótima para subtítulos em caixa alta)
+
+4. DIRETRIZES DE USO DO LOGO
+----------------------------------------------------------------
+1. VERSÃO PRINCIPAL (CABEÇALHO/FUNDO CLARO):
+   - Flor de Lótus Bicolor: Pétalas em Old Rose (#C48793) e Folhas base em Sage Green (#8C9C8F).
+   - Texto do Logo: Dark Truffle (#4A3F41).
+
+2. VERSÃO NEGATIVA (RODAPÉ/FUNDO ESCURO):
+   - Flor de Lótus: Totalmente em Off-White (#FAF7F5).
+   - Texto do Logo: Off-White (#FAF7F5).
+   - Fundo obrigatório: Sage Green (#8C9C8F).
+
+5. GUIA DE INTERFACE (UI)
+----------------------------------------------------------------
+- Botões (Buttons):
+  Fundo #C48793 | Texto #FAF7F5 | Border-radius: 4px ou 6px (cantos levemente arredondados).
+  Hover (ao passar o mouse): Escurecer levemente o rosa ou adicionar sombra suave.
+
+- Espaçamento (Whitespace):
+  Priorizar margens largas. O luxo está no espaço vazio.
+  Não agrupar elementos demais.
+
+- Imagens:
+  Devem ter filtro levemente aquecido ou dessaturado para combinar com a paleta.
+  Evitar fotos com cores neon ou contraste excessivo.
+
+================================================================
+Fim do Documento
+================================================================
