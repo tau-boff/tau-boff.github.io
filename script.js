@@ -475,3 +475,46 @@ if (audioPlayerWrapper && footer) {
   checkPlayerPosition();
 }
 
+// Animações de Scroll - Intersection Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // Não precisa mais observar após aparecer
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observar seções e rituais quando o DOM estiver pronto
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initScrollAnimations);
+} else {
+  initScrollAnimations();
+}
+
+function initScrollAnimations() {
+  // Observar seções
+  const sections = document.querySelectorAll('.section');
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Observar rituais
+  const rituals = document.querySelectorAll('.ritual');
+  rituals.forEach((ritual) => {
+    observer.observe(ritual);
+  });
+
+  // Observar imagens
+  const images = document.querySelectorAll('.section__image');
+  images.forEach((image) => {
+    observer.observe(image);
+  });
+}
+
