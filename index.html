@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://www.tauanaboff.com.br/" />
     <meta property="og:title" content="Tauana Boff | Massoterapia e Reiki em Caxias do Sul" />
     <meta property="og:description" content="Agende sua sessão de Massagem Relaxante, Pedras Quentes, Reiki e Estética. Um ambiente de luxo e acolhimento para o seu bem-estar em Caxias do Sul." />
-    <meta property="og:image" content="https://www.tauanaboff.com.br/images/ChatGPT%20Image%203%20de%20dez.%20de%202025,%2014_00_13.png" />
+    <meta property="og:image" content="https://www.tauanaboff.com.br/images/og-image.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="pt_BR" />
@@ -41,11 +41,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tauana Boff | Massoterapia e Reiki em Caxias do Sul" />
     <meta name="twitter:description" content="Agende sua sessão de Massagem Relaxante, Pedras Quentes, Reiki e Estética. Um ambiente de luxo e acolhimento para o seu bem-estar." />
-    <meta name="twitter:image" content="https://www.tauanaboff.com.br/images/ChatGPT%20Image%203%20de%20dez.%20de%202025,%2014_00_13.png" />
+    <meta name="twitter:image" content="https://www.tauanaboff.com.br/images/og-image.webp" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!-- Preload Critical Images -->
+    <link rel="preload" as="image" href="images/7f237afb-628e-479b-b537-a69c20b58415(1).webp" type="image/webp" />
+    <link rel="preload" as="image" href="images/sessao_2.webp" type="image/webp" />
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -194,12 +198,15 @@
       </video>
       <div class="hero__content container">
         <div class="hero__logo">
-          <img
-            src="images/7f237afb-628e-479b-b537-a69c20b58415(1).png"
-            alt="Logo Tauana Boff Massoterapeuta - símbolo da flor de lótus"
-            class="hero__logo-image"
-            loading="eager"
-          />
+          <picture>
+            <source srcset="images/7f237afb-628e-479b-b537-a69c20b58415(1).webp" type="image/webp" />
+            <img
+              src="images/7f237afb-628e-479b-b537-a69c20b58415(1).png"
+              alt="Logo Tauana Boff Massoterapeuta - símbolo da flor de lótus"
+              class="hero__logo-image"
+              loading="eager"
+            />
+          </picture>
           <span class="hero__logo-text">TAUANA BOFF MASSOTERAPEUTA</span>
         </div>
         <p class="hero__eyebrow">Experiências de Cura &amp; Relaxamento</p>
@@ -223,14 +230,17 @@
       <section class="section section--rituals" id="rituais">
         <div class="container section__inner section__inner--split">
           <div class="section__media">
-            <img
-              src="images/sessao_2.jpg"
-              alt="Sessão de massagem com pedras quentes realizada por Tauana Boff Massoterapeuta em ambiente de spa relaxante"
-              class="section__image"
-              loading="lazy"
-              width="600"
-              height="800"
-            />
+            <picture>
+              <source srcset="images/sessao_2.webp" type="image/webp" />
+              <img
+                src="images/sessao_2.jpg"
+                alt="Sessão de massagem com pedras quentes realizada por Tauana Boff Massoterapeuta em ambiente de spa relaxante"
+                class="section__image"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+            </picture>
           </div>
           <div class="section__content">
             <h2 class="section__title section__title--compact section__title--rituals">
@@ -288,14 +298,17 @@
     <footer class="footer">
       <div class="footer__inner container">
         <div class="footer__logo">
-          <img
-            src="images/footer_logo.png"
-            alt="Logo Tauana Boff Massoterapeuta - Massoterapia e Reiki em Caxias do Sul"
-            class="footer__logo-image"
-            loading="lazy"
-            width="180"
-            height="180"
-          />
+          <picture>
+            <source srcset="images/footer_logo.webp" type="image/webp" />
+            <img
+              src="images/footer_logo.png"
+              alt="Logo Tauana Boff Massoterapeuta - Massoterapia e Reiki em Caxias do Sul"
+              class="footer__logo-image"
+              loading="lazy"
+              width="180"
+              height="180"
+            />
+          </picture>
         </div>
         <p class="footer__phrase">Harmonia. Exclusividade. Você.</p>
         <div class="footer__social">
